@@ -1,0 +1,80 @@
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 600px;
+  margin: 50px auto;
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+}
+
+h1 {
+  text-align: center;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.usuario {
+  padding: 15px;
+  border-bottom: 1px solid #eee;
+}
+
+.usuario:hover {
+  background-color: #f5f5f5;
+  cursor: pointer;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.6);
+}
+
+.modal-content {
+  background: white;
+  margin: 10% auto;
+  padding: 20px;
+  width: 80%;
+  max-width: 400px;
+  border-radius: 10px;
+}
+
+#fechar {
+  float: right;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.modal-content {
+  animation: aparecer 0.3s ease;
+}
+
+@keyframes aparecer {
+  from {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.usuario {
+    cursor: pointer;
+}
